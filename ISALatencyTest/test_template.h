@@ -28,7 +28,7 @@ __device__ unsigned INSTRUCTION_PARAMTYPE1_PARAMTYPE2_INPUT(bool printresult)
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));					                                // Different size registers need different letters.  l=64 bits, r=32 bits...
 
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);                                // When printresult is true, print the name of the function along with any results
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);                                // When printresult is true, print the name of the function along with any results
 	return stop - start - 42;
 }
 #pragma endregion

@@ -32,7 +32,7 @@ __device__ unsigned bfind_u32_const_0x00000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));					                                        // Different size registers need different letters.  l=64 bits, r=32 bits...
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);                                        // When printresult is true, print the name of the function along with any results
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);                                        // When printresult is true, print the name of the function along with any results
 	return stop - start - 42;
 }
 
@@ -48,7 +48,7 @@ __device__ unsigned bfind_u32_const_0x00000001U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -64,7 +64,7 @@ __device__ unsigned bfind_u32_const_0x00000010U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -80,7 +80,7 @@ __device__ unsigned bfind_u32_const_0x00000100U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -97,7 +97,7 @@ __device__ unsigned bfind_u32_const_0x00001000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -113,7 +113,7 @@ __device__ unsigned bfind_u32_const_0x00010000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -129,7 +129,7 @@ __device__ unsigned bfind_u32_const_0x00040000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -145,7 +145,7 @@ __device__ unsigned bfind_u32_const_0x00080000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -161,7 +161,7 @@ __device__ unsigned bfind_u32_const_0x00100000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -177,7 +177,7 @@ __device__ unsigned bfind_u32_const_0x01000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -193,7 +193,7 @@ __device__ unsigned bfind_u32_const_0x10000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -209,7 +209,7 @@ __device__ unsigned bfind_u32_const_0x80000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -235,7 +235,7 @@ __device__ unsigned bfind_s32_const_0x00000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));					                                        // Different size registers need different letters.  l=64 bits, r=32 bits...
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);                                        // When printresult is true, print the name of the function along with any results
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);                                        // When printresult is true, print the name of the function along with any results
 	return stop - start - 42;
 }
 
@@ -251,7 +251,7 @@ __device__ unsigned bfind_s32_const_0x00000001U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -267,7 +267,7 @@ __device__ unsigned bfind_s32_const_0x00000010U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -283,7 +283,7 @@ __device__ unsigned bfind_s32_const_0x00000100U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -300,7 +300,7 @@ __device__ unsigned bfind_s32_const_0x00001000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -316,7 +316,7 @@ __device__ unsigned bfind_s32_const_0x00010000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -332,7 +332,7 @@ __device__ unsigned bfind_s32_const_0x00040000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -348,7 +348,7 @@ __device__ unsigned bfind_s32_const_0x00080000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -364,7 +364,7 @@ __device__ unsigned bfind_s32_const_0x00100000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -380,7 +380,7 @@ __device__ unsigned bfind_s32_const_0x01000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -396,7 +396,7 @@ __device__ unsigned bfind_s32_const_0x10000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -412,7 +412,7 @@ __device__ unsigned bfind_s32_const_0x80000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -438,7 +438,7 @@ __device__ unsigned bfind_u32_register_0x00000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -456,7 +456,7 @@ __device__ unsigned bfind_u32_register_0x00000001U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -474,7 +474,7 @@ __device__ unsigned bfind_u32_register_0x00000010U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -492,7 +492,7 @@ __device__ unsigned bfind_u32_register_0x00000100U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -510,7 +510,7 @@ __device__ unsigned bfind_u32_register_0x00001000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -528,7 +528,7 @@ __device__ unsigned bfind_u32_register_0x00010000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -546,7 +546,7 @@ __device__ unsigned bfind_u32_register_0x00100000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -564,7 +564,7 @@ __device__ unsigned bfind_u32_register_0x01000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -582,7 +582,7 @@ __device__ unsigned bfind_u32_register_0x10000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -600,7 +600,7 @@ __device__ unsigned bfind_u32_register_0x80000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -626,7 +626,7 @@ __device__ unsigned bfind_s32_register_0x00000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -644,7 +644,7 @@ __device__ unsigned bfind_s32_register_0x00000001U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -662,7 +662,7 @@ __device__ unsigned bfind_s32_register_0x00000010U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -680,7 +680,7 @@ __device__ unsigned bfind_s32_register_0x00000100U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -698,7 +698,7 @@ __device__ unsigned bfind_s32_register_0x00001000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -716,7 +716,7 @@ __device__ unsigned bfind_s32_register_0x00010000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -734,7 +734,7 @@ __device__ unsigned bfind_s32_register_0x00100000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -752,7 +752,7 @@ __device__ unsigned bfind_s32_register_0x01000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -770,7 +770,7 @@ __device__ unsigned bfind_s32_register_0x10000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -788,7 +788,7 @@ __device__ unsigned bfind_s32_register_0x80000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -815,7 +815,7 @@ __device__ unsigned bfind_u64_const_0x0000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));					                                        // Different size registers need different letters.  l=64 bits, r=32 bits...
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);                                        // When printresult is true, print the name of the function along with any results
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);                                        // When printresult is true, print the name of the function along with any results
 	return stop - start - 42;
 }
 
@@ -831,7 +831,7 @@ __device__ unsigned bfind_u64_const_0x0000000000000001U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -847,7 +847,7 @@ __device__ unsigned bfind_u64_const_0x0000000000000010U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -863,7 +863,7 @@ __device__ unsigned bfind_u64_const_0x0000000000000100U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -880,7 +880,7 @@ __device__ unsigned bfind_u64_const_0x0000000000001000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -896,7 +896,7 @@ __device__ unsigned bfind_u64_const_0x0000000000010000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -912,7 +912,7 @@ __device__ unsigned bfind_u64_const_0x0000000000040000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -928,7 +928,7 @@ __device__ unsigned bfind_u64_const_0x0000000000080000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -944,7 +944,7 @@ __device__ unsigned bfind_u64_const_0x0000000000100000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -960,7 +960,7 @@ __device__ unsigned bfind_u64_const_0x0000000001000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -976,7 +976,7 @@ __device__ unsigned bfind_u64_const_0x0000000010000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -992,7 +992,7 @@ __device__ unsigned bfind_u64_const_0x0000000080000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1008,7 +1008,7 @@ __device__ unsigned bfind_u64_const_0x0000000100000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1024,7 +1024,7 @@ __device__ unsigned bfind_u64_const_0x0000001000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1040,7 +1040,7 @@ __device__ unsigned bfind_u64_const_0x0000010000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1057,7 +1057,7 @@ __device__ unsigned bfind_u64_const_0x0000100000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1073,7 +1073,7 @@ __device__ unsigned bfind_u64_const_0x0001000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1089,7 +1089,7 @@ __device__ unsigned bfind_u64_const_0x0004000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1105,7 +1105,7 @@ __device__ unsigned bfind_u64_const_0x0008000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1121,7 +1121,7 @@ __device__ unsigned bfind_u64_const_0x0010000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1137,7 +1137,7 @@ __device__ unsigned bfind_u64_const_0x0100000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1153,7 +1153,7 @@ __device__ unsigned bfind_u64_const_0x1000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1169,7 +1169,7 @@ __device__ unsigned bfind_u64_const_0x8000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1195,7 +1195,7 @@ __device__ unsigned bfind_s64_const_0x0000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));					                                        // Different size registers need different letters.  l=64 bits, r=32 bits...
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);                                        // When printresult is true, print the name of the function along with any results
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);                                        // When printresult is true, print the name of the function along with any results
 	return stop - start - 42;
 }
 
@@ -1211,7 +1211,7 @@ __device__ unsigned bfind_s64_const_0x0000000000000001U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1227,7 +1227,7 @@ __device__ unsigned bfind_s64_const_0x0000000000000010U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1243,7 +1243,7 @@ __device__ unsigned bfind_s64_const_0x0000000000000100U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1260,7 +1260,7 @@ __device__ unsigned bfind_s64_const_0x0000000000001000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1276,7 +1276,7 @@ __device__ unsigned bfind_s64_const_0x0000000000010000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1292,7 +1292,7 @@ __device__ unsigned bfind_s64_const_0x0000000000040000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1308,7 +1308,7 @@ __device__ unsigned bfind_s64_const_0x0000000000080000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1324,7 +1324,7 @@ __device__ unsigned bfind_s64_const_0x0000000000100000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1340,7 +1340,7 @@ __device__ unsigned bfind_s64_const_0x0000000001000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1356,7 +1356,7 @@ __device__ unsigned bfind_s64_const_0x0000000010000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1372,7 +1372,7 @@ __device__ unsigned bfind_s64_const_0x0000000080000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1388,7 +1388,7 @@ __device__ unsigned bfind_s64_const_0x0000000100000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1404,7 +1404,7 @@ __device__ unsigned bfind_s64_const_0x0000001000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1420,7 +1420,7 @@ __device__ unsigned bfind_s64_const_0x0000010000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1437,7 +1437,7 @@ __device__ unsigned bfind_s64_const_0x0000100000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1453,7 +1453,7 @@ __device__ unsigned bfind_s64_const_0x0001000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1469,7 +1469,7 @@ __device__ unsigned bfind_s64_const_0x0004000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1485,7 +1485,7 @@ __device__ unsigned bfind_s64_const_0x0008000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1501,7 +1501,7 @@ __device__ unsigned bfind_s64_const_0x0010000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1517,7 +1517,7 @@ __device__ unsigned bfind_s64_const_0x0100000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1533,7 +1533,7 @@ __device__ unsigned bfind_s64_const_0x1000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1549,7 +1549,7 @@ __device__ unsigned bfind_s64_const_0x8000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1576,7 +1576,7 @@ __device__ unsigned bfind_u64_register_0x0000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1594,7 +1594,7 @@ __device__ unsigned bfind_u64_register_0x0000000000000001U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1612,7 +1612,7 @@ __device__ unsigned bfind_u64_register_0x0000000000000010U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1630,7 +1630,7 @@ __device__ unsigned bfind_u64_register_0x0000000000000100U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1648,7 +1648,7 @@ __device__ unsigned bfind_u64_register_0x0000000000001000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1666,7 +1666,7 @@ __device__ unsigned bfind_u64_register_0x0000000000010000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1684,7 +1684,7 @@ __device__ unsigned bfind_u64_register_0x0000000000100000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1702,7 +1702,7 @@ __device__ unsigned bfind_u64_register_0x0000000001000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1720,7 +1720,7 @@ __device__ unsigned bfind_u64_register_0x0000000010000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1738,7 +1738,7 @@ __device__ unsigned bfind_u64_register_0x0000000080000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1756,7 +1756,7 @@ __device__ unsigned bfind_u64_register_0x0000000100000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1774,7 +1774,7 @@ __device__ unsigned bfind_u64_register_0x0000001000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1792,7 +1792,7 @@ __device__ unsigned bfind_u64_register_0x0000010000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1810,7 +1810,7 @@ __device__ unsigned bfind_u64_register_0x000001000(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1828,7 +1828,7 @@ __device__ unsigned bfind_u64_register_0x0000100000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1846,7 +1846,7 @@ __device__ unsigned bfind_u64_register_0x0001000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1864,7 +1864,7 @@ __device__ unsigned bfind_u64_register_0x0010000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1882,7 +1882,7 @@ __device__ unsigned bfind_u64_register_0x0100000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1900,7 +1900,7 @@ __device__ unsigned bfind_u64_register_0x1000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"                         
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1918,7 +1918,7 @@ __device__ unsigned bfind_u64_register_0x8000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1945,7 +1945,7 @@ __device__ unsigned bfind_s64_register_0x0000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1963,7 +1963,7 @@ __device__ unsigned bfind_s64_register_0x0000000000000001U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1981,7 +1981,7 @@ __device__ unsigned bfind_s64_register_0x0000000000000010U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -1999,7 +1999,7 @@ __device__ unsigned bfind_s64_register_0x0000000000000100U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2017,7 +2017,7 @@ __device__ unsigned bfind_s64_register_0x0000000000001000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2035,7 +2035,7 @@ __device__ unsigned bfind_s64_register_0x0000000000010000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2053,7 +2053,7 @@ __device__ unsigned bfind_s64_register_0x0000000000100000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2071,7 +2071,7 @@ __device__ unsigned bfind_s64_register_0x0000000001000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2089,7 +2089,7 @@ __device__ unsigned bfind_s64_register_0x0000000010000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2107,7 +2107,7 @@ __device__ unsigned bfind_s64_register_0x0000000080000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2125,7 +2125,7 @@ __device__ unsigned bfind_s64_register_0x0000000100000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2143,7 +2143,7 @@ __device__ unsigned bfind_s64_register_0x0000001000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2161,7 +2161,7 @@ __device__ unsigned bfind_s64_register_0x0000010000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2179,7 +2179,7 @@ __device__ unsigned bfind_s64_register_0x000001000(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2197,7 +2197,7 @@ __device__ unsigned bfind_s64_register_0x0000100000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2215,7 +2215,7 @@ __device__ unsigned bfind_s64_register_0x0001000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2233,7 +2233,7 @@ __device__ unsigned bfind_s64_register_0x0010000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2251,7 +2251,7 @@ __device__ unsigned bfind_s64_register_0x0100000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2269,7 +2269,7 @@ __device__ unsigned bfind_s64_register_0x1000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 
@@ -2287,7 +2287,7 @@ __device__ unsigned bfind_s64_register_0x8000000000000000U(bool printresult)
 		" mov.u32 %1, %%clock;                                  \n\t"
 		"}"
 		: "=r"(start), "=r"(stop), "=r"(out32a));
-	if (printresult) printf("%s result = %u", __FUNCTION__, out32a);
+	if (printresult) printf("%s = %u", __FUNCTION__, out32a);
 	return stop - start - 42;
 }
 

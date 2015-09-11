@@ -70,7 +70,7 @@ __device__ void Evaluate(TEST test)
 			lastlatency = newlatency;
 		}
 	}
-	printf("%04u cyles for ", lastlatency);
+	printf("%06u cycles: ", lastlatency);
 	test(true);
 	printf("\n");
 }
