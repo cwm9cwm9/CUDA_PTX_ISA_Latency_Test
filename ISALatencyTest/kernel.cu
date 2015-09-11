@@ -31,7 +31,7 @@ __device__ void Evaluate(TEST test)
 #include "test_bfind.h"
 #include "test_brev.h"
 #include "test_popc.h"
-#include "test_template.h"											// Add your test_INSTRUCTION.h file here
+//#include "test_template.h"											// Add your test_INSTRUCTION.h file here
 
 __device__ void NEXT_TEST_GROUP() {}
 
