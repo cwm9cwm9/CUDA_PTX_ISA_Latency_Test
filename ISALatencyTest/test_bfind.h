@@ -2334,7 +2334,28 @@ __device__ void NEXT_TEST_GROUP() {
 	Evaluate(&bfind_s32_const_0x10000000U);
 	Evaluate(&bfind_s32_const_0x80000000U);
 
-	Evaluate(&bfind_u64_const_0x0000000000000000U);                                                         
+	Evaluate(&bfind_u32_register_0x00000000U);
+	Evaluate(&bfind_u32_register_0x00000001U);
+	Evaluate(&bfind_u32_register_0x00000010U);
+	Evaluate(&bfind_u32_register_0x00000100U);
+	Evaluate(&bfind_u32_register_0x00001000U);
+	Evaluate(&bfind_u32_register_0x00010000U);
+	Evaluate(&bfind_u32_register_0x00100000U);
+	Evaluate(&bfind_u32_register_0x01000000U);
+	Evaluate(&bfind_u32_register_0x10000000U);
+	Evaluate(&bfind_u32_register_0x80000000U);
+	Evaluate(&bfind_s32_register_0x00000000U);
+	Evaluate(&bfind_s32_register_0x00000001U);
+	Evaluate(&bfind_s32_register_0x00000010U);
+	Evaluate(&bfind_s32_register_0x00000100U);
+	Evaluate(&bfind_s32_register_0x00001000U);
+	Evaluate(&bfind_s32_register_0x00010000U);
+	Evaluate(&bfind_s32_register_0x00100000U);
+	Evaluate(&bfind_s32_register_0x01000000U);
+	Evaluate(&bfind_s32_register_0x10000000U);
+	Evaluate(&bfind_s32_register_0x80000000U);
+
+	Evaluate(&bfind_u64_const_0x0000000000000000U);
 	Evaluate(&bfind_u64_const_0x0000000000000001U);
 	Evaluate(&bfind_u64_const_0x0000000000000010U);
 	Evaluate(&bfind_u64_const_0x0000000000000100U);
@@ -2380,27 +2401,6 @@ __device__ void NEXT_TEST_GROUP() {
 	Evaluate(&bfind_s64_const_0x0100000000000000U);
 	Evaluate(&bfind_s64_const_0x1000000000000000U);
 	Evaluate(&bfind_s64_const_0x8000000000000000U);
-
-	Evaluate(&bfind_u32_register_0x00000000U);
-	Evaluate(&bfind_u32_register_0x00000001U);
-	Evaluate(&bfind_u32_register_0x00000010U);
-	Evaluate(&bfind_u32_register_0x00000100U);
-	Evaluate(&bfind_u32_register_0x00001000U);
-	Evaluate(&bfind_u32_register_0x00010000U);
-	Evaluate(&bfind_u32_register_0x00100000U);
-	Evaluate(&bfind_u32_register_0x01000000U);
-	Evaluate(&bfind_u32_register_0x10000000U);
-	Evaluate(&bfind_u32_register_0x80000000U);
-	Evaluate(&bfind_s32_register_0x00000000U);
-	Evaluate(&bfind_s32_register_0x00000001U);
-	Evaluate(&bfind_s32_register_0x00000010U);
-	Evaluate(&bfind_s32_register_0x00000100U);
-	Evaluate(&bfind_s32_register_0x00001000U);
-	Evaluate(&bfind_s32_register_0x00010000U);
-	Evaluate(&bfind_s32_register_0x00100000U);
-	Evaluate(&bfind_s32_register_0x01000000U);
-	Evaluate(&bfind_s32_register_0x10000000U);
-	Evaluate(&bfind_s32_register_0x80000000U);
 
 	Evaluate(&bfind_u64_register_0x0000000000000000U);
 	Evaluate(&bfind_u64_register_0x0000000000000001U);
