@@ -1,3 +1,5 @@
+#include "compute_capability.h"
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////
@@ -44,8 +46,7 @@ __device__ unsigned INSTRUCTION_PARAMTYPE1_PARAMTYPE2_INPUT(bool printresult)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 __device__ void After_INSTRUCTION();											                    // Replace INSTRUCTION with your instruction name
-__device__ void NEXT_TEST_GROUP()
-{
+__device__ void NEXT_TEST_GROUP() {
 #ifdef PTX_ISA_VERSION_x_x                                                                          // Change PTX_ISA_VERSION_x_x to the PTX ISA Version number required BY THE INSTRUCTION.  Don't put your card's compute capability here...
 	Evaluate(&INSTRUCTION_PARAMTYPE1_PARAMTYPE2_INPUT);								                // call evaluate on the address of every function you've created
 #endif

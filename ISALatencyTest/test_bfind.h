@@ -1,3 +1,5 @@
+#include "compute_capability.h"
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////
@@ -2305,8 +2307,7 @@ __device__ unsigned bfind_s64_register_0x8000000000000000U(bool printresult)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 __device__ void After_bfind();								                                                // Replace INSTRUCTION with your instruction name
-__device__ void NEXT_TEST_GROUP()
-{
+__device__ void NEXT_TEST_GROUP() {
 #ifdef PTX_ISA_VERSION_2_0                                                                                  // Change PTX_ISA_VERSION_2_0 to the PTX ISA Version number required BY THE INSTRUCTION.  Don't put your card's compute capability here...
 	Evaluate(&bfind_u32_const_0x00000000U);                                                                 // call evaluate on the address of every function you've created
 	Evaluate(&bfind_u32_const_0x00000001U);

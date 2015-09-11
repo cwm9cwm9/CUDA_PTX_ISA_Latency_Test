@@ -1,57 +1,8 @@
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
+#include "compute_capability.h"
 
 #include <stdio.h>
-
-#define PTX_ISA_VERSION_4_3									        // CHANGE THIS VALUE TO THE COMPUTE CAPABILITY OF YOUR CARD
-
-#ifdef PTX_ISA_VERSION_4_3
-#define PTX_ISA_VERSION_4_2
-#endif
-
-#ifdef PTX_ISA_VERSION_4_2
-#define PTX_ISA_VERSION_4_1
-#endif
-
-#ifdef PTX_ISA_VERSION_4_1
-#define PTX_ISA_VERSION_4_0
-#endif
-
-#ifdef PTX_ISA_VERSION_4_0
-#define PTX_ISA_VERSION_3_2
-#endif
-
-#ifdef PTX_ISA_VERSION_3_2
-#define PTX_ISA_VERSION_3_1
-#endif
-
-#ifdef PTX_ISA_VERSION_3_1
-#define PTX_ISA_VERSION_3_0
-#endif
-
-#ifdef PTX_ISA_VERSION_3_1
-#define PTX_ISA_VERSION_3_0
-#endif
-
-#ifdef PTX_ISA_VERSION_3_0
-#define PTX_ISA_VERSION_2_2
-#endif
-
-#ifdef PTX_ISA_VERSION_2_3
-#define PTX_ISA_VERSION_2_2
-#endif
-
-#ifdef PTX_ISA_VERSION_2_2
-#define PTX_ISA_VERSION_2_1
-#endif
-
-#ifdef PTX_ISA_VERSION_2_1
-#define PTX_ISA_VERSION_2_0
-#endif
-
-#ifdef PTX_ISA_VERSION_2_0
-#define PTX_ISA_VERSION_1_x
-#endif
 
 typedef unsigned int(*TEST)(bool);
 
@@ -79,6 +30,7 @@ __device__ void Evaluate(TEST test)
 
 #include "test_bfind.h"
 #include "test_brev.h"
+#include "test_popc.h"
 #include "test_template.h"											// Add your test_INSTRUCTION.h file here
 
 __device__ void NEXT_TEST_GROUP() {}
